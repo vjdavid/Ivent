@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>No resguardo:</strong>
+  <%= @resguardo.no_resguardo %>
+</p>
+
+<p>
+  <strong>Concepto:</strong>
+  <%= @resguardo.concepto %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @resguardo.descripcion %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @resguardo.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @resguardo.modelo %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= image_tag(@resguardo.imagen_url) if @resguardo.imagen.present? %>
+</p>
+
+<p>
+  <strong>No serie:</strong>
+  <%= @resguardo.no_serie %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @resguardo.precio %>
+</p>
+
+<p>
+  <strong>Valor actual:</strong>
+  <%= @resguardo.valor_actual %>
+</p>
+
+<p>
+  <strong>Ubicacion:</strong>
+  <%= @resguardo.ubicacion %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @resguardo.estado %>
+</p>
+
+<p>
+  <strong>F compra:</strong>
+  <%= @resguardo.f_compra %>
+</p>
+
+<p>
+  <strong>Conectividad:</strong>
+  <%= @resguardo.conectividad %>
+</p>
+
+<p>
+  <strong>Peso:</strong>
+  <%= @resguardo.peso %>
+</p>
+
+<p>
+  <strong>Proveedor:</strong>
+  <%= @resguardo.proveedor %>
+</p>
+
+<p>
+  <strong>Notas:</strong>
+  <%= @resguardo.notas %>
+</p>
+
+<p>
+  <strong>Garantia:</strong>
+  <%= @resguardo.garantia %>
+</p>
+
+<%= link_to 'Edit', edit_resguardo_path(@resguardo) %> |
+<%= link_to 'Back', resguardos_path %>

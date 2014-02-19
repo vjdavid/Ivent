@@ -1,0 +1,59 @@
+<h1>Listing resguardos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>No resguardo</th>
+      <th>Concepto</th>
+      <th>Descripcion</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Imagen</th>
+      <th>No serie</th>
+      <th>Precio</th>
+      <th>Valor actual</th>
+      <th>Ubicacion</th>
+      <th>Estado</th>
+      <th>F compra</th>
+      <th>Conectividad</th>
+      <th>Peso</th>
+      <th>Proveedor</th>
+      <th>Notas</th>
+      <th>Garantia</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resguardos.each do |resguardo| %>
+      <tr>
+        <td><%= resguardo.no_resguardo %></td>
+        <td><%= resguardo.concepto %></td>
+        <td><%= resguardo.descripcion %></td>
+        <td><%= resguardo.marca %></td>
+        <td><%= resguardo.modelo %></td>
+        <td><%= resguardo.imagen %></td>
+        <td><%= resguardo.no_serie %></td>
+        <td><%= resguardo.precio %></td>
+        <td><%= resguardo.valor_actual %></td>
+        <td><%= resguardo.ubicacion %></td>
+        <td><%= resguardo.estado %></td>
+        <td><%= resguardo.f_compra %></td>
+        <td><%= resguardo.conectividad %></td>
+        <td><%= resguardo.peso %></td>
+        <td><%= resguardo.proveedor %></td>
+        <td><%= resguardo.notas %></td>
+        <td><%= resguardo.garantia %></td>
+        <td><%= link_to 'Show', resguardo %></td>
+        <td><%= link_to 'Edit', edit_resguardo_path(resguardo) %></td>
+        <td><%= link_to 'Destroy', resguardo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resguardo', new_resguardo_path %>

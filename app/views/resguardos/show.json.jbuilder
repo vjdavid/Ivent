@@ -1,0 +1,1 @@
+json.extract! @resguardo, :id, :no_resguardo, :concepto, :descripcion, :marca, :modelo, :imagen, :no_serie, :precio, :valor_actual, :ubicacion, :estado, :f_compra, :conectividad, :peso, :proveedor, :notas, :garantia, :created_at, :updated_at

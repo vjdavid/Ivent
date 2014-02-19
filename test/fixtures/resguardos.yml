@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  no_resguardo: MyString
+  concepto: MyString
+  descripcion: MyString
+  marca: MyString
+  modelo: MyString
+  imagen: MyString
+  no_serie: MyString
+  precio: MyString
+  valor_actual: MyString
+  ubicacion: MyString
+  estado: MyString
+  f_compra: 2014-02-18
+  conectividad: MyString
+  peso: MyString
+  proveedor: MyString
+  notas: MyString
+  garantia: MyString
+
+two:
+  no_resguardo: MyString
+  concepto: MyString
+  descripcion: MyString
+  marca: MyString
+  modelo: MyString
+  imagen: MyString
+  no_serie: MyString
+  precio: MyString
+  valor_actual: MyString
+  ubicacion: MyString
+  estado: MyString
+  f_compra: 2014-02-18
+  conectividad: MyString
+  peso: MyString
+  proveedor: MyString
+  notas: MyString
+  garantia: MyString

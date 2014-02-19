@@ -1,0 +1,2 @@
+module ResguardosHelper
+end
