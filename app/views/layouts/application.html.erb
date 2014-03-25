@@ -3,40 +3,63 @@
 <head>
   <title>Intest</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css" />
-  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css" />
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
+<div class="container-fluid">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Inventario Tijuana Propone</a>
+      <a class="navbar-brand" href="#">Inventario Tijuana Propone</a>
     </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Listado</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div class="container">
-  <%= yield %>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a href="#">Configuración</a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Busqueda">
+        </div>
+        <button type="submit" class="btn btn-default">Buscar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Prestamos &nbsp<span class="badge">2</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bienvenido, David <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Configuracion</a></li>
+            <li><a href="#">Eliminar</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Cerrar Sesion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+  <div class="col-md-1">
+  	
+  </div>
+  <div class="col-md-10"><%= yield %></div>
+  <div class="col-md-1"></div>
+</div>
 </div>
 
+  
+
 </body>
-<footer>
-  <div class="container">
-   Inventario Tijuana Propone
-  </div>
-</footer>
-<script src="//railsgirls.com/assets/bootstrap.js"></script>
 </html>
