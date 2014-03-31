@@ -19,5 +19,7 @@ module Intest
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    # this is a sitie of the new complement of requests of all development increment
+    # For a complex implementation off topic get all elements by order id and foregin key mysql
   end
 end
